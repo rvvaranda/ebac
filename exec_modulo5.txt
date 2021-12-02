@@ -1,0 +1,36 @@
+
+// 1) Qual das seguintes atribuição são válidas?
+var name: String? = "Carlos" -> Válida
+var age: Int = nil
+let kilometer: Float = 26.7 -> Válida
+var lastName: String? = nil -> Válida
+
+
+// 2) - Faça o unwrap com segurança com a constante, `number` e print com a condição mais legível.
+var numericalString = "3"
+var number = Int(numericalString)
+
+if let number = number {
+    print("\(number) is the magic number.")
+} else {
+    print("Valor inválido")
+}
+
+// 3) - Se alteramos o valor da variavel numericalString para "cinco" e executar o playground, o que acontecerá?
+// a - Vai funcionar sem problemas
+// b - Não vai funcionar
+// c - acredito que não funcione.
+
+alternativa A
+
+// 4) - A classe UIViewController possui uma propriedade chamada tabBarController. A propriedade tabBarController é optinal do tipo `UITabBarController?`. 
+O próprio tabBarController contém um tabBar como propriedade. 
+Complete o código abaixo preenchendo com o uso apropriado do optional chaining para acessar a propriedade `tabBar`.
+
+var viewController = UIViewController()
+var tabBarController: UITabBarController? = UITabBarController()
+if let tabBar = tabBarController?.tabBar  {
+    print("Aqui tem uma tabBar controller.")
+} else {
+    print("Aqui não tem uma tabBar controller.")
+}
